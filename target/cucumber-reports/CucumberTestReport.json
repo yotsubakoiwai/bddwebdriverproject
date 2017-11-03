@@ -1,0 +1,184 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6573494340,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.initializeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Successful Login",
+        "description": "",
+        "id": "authentication;successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 2346350040,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ServiceHooks.finalizeTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000291470,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the \"http://demowebshop.tricentis.com/tricentis\" web page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://demowebshop.tricentis.com/tricentis",
+                  "offset": 13
+                }
+              ],
+              "location": "Login.navigateToWebPage(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 945810004,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click \"Log in\" link from the breadcrumbs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 9
+                }
+              ],
+              "location": "Login.clickLinkFromTheBreadcrumbs(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 358472924,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I fill in \"Email\" with \"jackie.custodio@planittesting.test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email",
+                  "offset": 11
+                },
+                {
+                  "val": "jackie.custodio@planittesting.test",
+                  "offset": 24
+                }
+              ],
+              "location": "Login.fillInWith(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 209179936,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I fill in \"Password\" with \"Tosca1234!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password",
+                  "offset": 11
+                },
+                {
+                  "val": "Tosca1234!",
+                  "offset": 27
+                }
+              ],
+              "location": "Login.fillInWith(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2759525295,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the \"Log in\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log in",
+                  "offset": 16
+                }
+              ],
+              "location": "Login.clickOnTheButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 160592753,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see \"Welcome to the new Tricentis store!\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome to the new Tricentis store!",
+                  "offset": 14
+                }
+              ],
+              "location": "Login.messageDisplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 105911844,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see the \"Log out\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Log out",
+                  "offset": 18
+                }
+              ],
+              "location": "Login.linkDisplayed(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Authentication",
+    "description": "",
+    "id": "authentication",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]
